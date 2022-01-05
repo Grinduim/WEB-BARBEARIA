@@ -78,7 +78,7 @@
 
                 <div class="form-item">
                     <label for="telefone">Telefone celular:</label>
-                    <input type="tel" name="" id="telefone" placeholder="Insira seu telefone" required>
+                    <input type="tel" name="" id="telefone" placeholder="Insira seu telefone" required onkeyup="formatTelefone(event)" minlength="14" maxlength="15">
                 </div>
 
                 <div class="form-item">
@@ -121,7 +121,7 @@
                     <input type="text" name="" id="motion" placeholder="Qual o motivo para querer trabalhar conosco ?" required>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="alert('Candatura Enviada')">Enviar</button>
 
 
             </div>
@@ -135,5 +135,7 @@
             <p>Rua Jacomiti Nº2956, Agua Verde, São Paulo - SP</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
